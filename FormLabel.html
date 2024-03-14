@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="elma">
+    <meta name="description" content="HTML Lesson Content">
+    <title>HTML LESSON</title>
+
+</head>
+
+<!--
+    action : Gönder butonuna basınca veriler "action" attribute çalışır.
+    method : Verileri "GET" veya "POST" ile gönderme biçini belirtiriz. Veri Açık mı gitsin ? Gizli mi gitsin ?
+
+    ** Form içerisinde çalışmasını istediğimiz işlemleri form tagları arasında yaz
+
+    <input type="text">
+    <input type="password">
+    <input type="email">
+    <input type="checkbox">
+    <input type="radio">
+    <input type="file">
+    <input type="reset">
+    <input type="submit">
+    <textarea id="w3review" name="w3review" rows=4 cols="50"
+    <select> <option>
+-->
+
+<body>
+
+    <form action="">
+        Name: <input type="text" placeholder="Name">
+        Password: <input type="password" placeholder="Password">
+        Email: <input type="email" placeholder="Email">
+        <br>
+        Kitap Okumak <input type="checkbox" id="bookCheckbox">
+        <br>
+        Spor Yapmak<input type="checkbox" id="sporCheckbox">
+        <br>
+
+        <!--name attribute aynı olursa radio butonlardan birini seçebiliriz. Name attribute olmazsa ikisi de seçilebiliyor-->
+        <!--Checked=true attribute otomatik olarak seçili getirir-->
+        Kadın <input type="radio" name="genderRadio" checked="true">
+
+        Erkek <input type="radio" name="genderRadio">
+
+        <br><br><br>
+        <textarea name="mesajInput" id="mesajAlani" cols="30" rows="10"></textarea>
+        <br><br>
+        <!--VALUE: Seçilen değerleri gönder butonuna bastıktan sonra gitmesi için kullanılır. Value kullanılmazsa veri gitmez-->
+        İÇECEK SEÇİNİZ :
+        <select name="" id="">
+            <option value="">Seçim Yapınız ...</option>
+            <option value="coffee">Coffee</option>
+            <option value="tea">Tea</option>
+            <option value="coke">Coke</option>
+            <option value="redbull">Redbull</option>
+            <option value="lemonada">Lemonada</option>
+        </select>
+        <br><br>
+        <input type="file">
+        <br><br>
+        <input type="submit" value="Gönder">
+        <input type="reset" value="Tüm Verileri Temizle">
+        <br><br>
+
+    </form>
+
+</body>
+
+</html>
